@@ -23,7 +23,9 @@
         <p>Harum veritatis vero numquam corporis quis quod, unde inventore perspiciatis enim voluptatem pariatur, quisquam amet consectetur voluptatum nisi doloribus maiores culpa exercitationem! Iusto rerum error sapiente, amet molestias officia ipsa?</p>
       </section>
       <section>
-        <button>bouton 3</button>
+        <div x-data="{ open: false }">
+          <button @click="open = ! open">Bouton 3</button>
+           <span x-show="open" x-transition>
         <p>Sapiente, quidem porro vitae consectetur magnam maxime animi sequi soluta recusandae deserunt ut alias! Veniam consequuntur nulla, quis reprehenderit quas sapiente, aspernatur similique, exercitationem quia quasi numquam pariatur sunt accusamus.</p>
       </section>
     </div>

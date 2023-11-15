@@ -9,9 +9,9 @@
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-    <div class="accordeon">
+    <div class="accordeon" x-data="{open: 0}">
       <section>
-        <button>bouton 1</button>
+        <button @click="open: 1">bouton 1</button>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti culpa nostrum optio blanditiis impedit repellat ex natus porro! Nam ducimus, quo eos sit nostrum cupiditate voluptate praesentium eum iusto nesciunt!</p>
       </section>
       <section>

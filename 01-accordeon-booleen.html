@@ -11,7 +11,9 @@
     <h1>Accordéon avec des booléens</h1>
     <div class="accordeon">
       <section>
-        <button>bouton 1</button>
+        <div x-data="{ open: false }">
+          <button @click="open = ! open">Bouton 1</button>
+           <span x-show="open" x-transition>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aperiam, error vero quidem fugit labore est asperiores, qui temporibus blanditiis delectus corrupti repellendus cumque facilis numquam similique possimus eum. Neque!</p>
       </section>
       <section>

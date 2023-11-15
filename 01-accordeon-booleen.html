@@ -17,7 +17,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aperiam, error vero quidem fugit labore est asperiores, qui temporibus blanditiis delectus corrupti repellendus cumque facilis numquam similique possimus eum. Neque!</p>
       </section>
       <section>
-        <button>bouton 2</button>
+        <div x-data="{ open: false }">
+          <button @click="open = ! open">Bouton 2</button>
+           <span x-show="open" x-transition>
         <p>Harum veritatis vero numquam corporis quis quod, unde inventore perspiciatis enim voluptatem pariatur, quisquam amet consectetur voluptatum nisi doloribus maiores culpa exercitationem! Iusto rerum error sapiente, amet molestias officia ipsa?</p>
       </section>
       <section>

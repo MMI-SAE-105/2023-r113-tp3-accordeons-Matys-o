@@ -12,15 +12,15 @@
     <div class="accordeon" x-data="{open: 0}">
       <section>
         <button @click="open= 1">bouton 1</button>
-        <p x-show="open===1" x-transition>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti culpa nostrum optio blanditiis impedit repellat ex natus porro! Nam ducimus, quo eos sit nostrum cupiditate voluptate praesentium eum iusto nesciunt!</p>
+        <p x-show="open===1" x-transition.duration.500ms.scale.90.origin.left>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti culpa nostrum optio blanditiis impedit repellat ex natus porro! Nam ducimus, quo eos sit nostrum cupiditate voluptate praesentium eum iusto nesciunt!</p>
       </section>
       <section>
         <button @click="open= 2">bouton 2</button>
-        <p x-show="open===2" x-transition>Beatae laudantium fuga rerum eum enim impedit, dolorum, tempore explicabo soluta quidem nisi suscipit aspernatur voluptatum, et repellat exercitationem error placeat quaerat blanditiis temporibus numquam? Atque provident dolores nam neque?</p>
+        <p x-show="open===2" x-transition.duration.500ms.scale.90.origin.left>Beatae laudantium fuga rerum eum enim impedit, dolorum, tempore explicabo soluta quidem nisi suscipit aspernatur voluptatum, et repellat exercitationem error placeat quaerat blanditiis temporibus numquam? Atque provident dolores nam neque?</p>
       </section>
       <section>
         <button @click="open= 3">bouton 3</button>
-        <p x-show="open===3" x-transition>Beatae laudantium fuga rerum eum enim impedit, dolorum, tempore explicabo soluta quidem nisi suscipit aspernatur voluptatum, et repellat exercitationem error placeat quaerat blanditiis temporibus numquam? Atque provident dolores nam neque?</p>
+        <p x-show="open===3" x-transition.duration.500ms.scale.90.origin.left>Beatae laudantium fuga rerum eum enim impedit, dolorum, tempore explicabo soluta quidem nisi suscipit aspernatur voluptatum, et repellat exercitationem error placeat quaerat blanditiis temporibus numquam? Atque provident dolores nam neque?</p>
       </section>
     
     </div>

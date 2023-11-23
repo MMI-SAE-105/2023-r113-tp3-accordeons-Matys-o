@@ -5,24 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon avec x-collapse</title>
+    <!-- Alpine Plugins -->
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
-    <div class="accordeon">
-      <section x-data="{expanded: false}">
-        <button @click="expanded = ! expanded">bouton 1</button>
-        <p x-show="expanded" x-collapse.duration.1000ms>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi provident placeat quaerat laborum? Repellat explicabo aliquid nesciunt, officiis velit exercitationem, repudiandae distinctio, iusto consequuntur ipsam sit necessitatibus? Nobis, commodi placeat?</p>
+    <div class="accordeon" x-data="{open: 0}">
+      <section>
+        <button @click="open= 1">bouton 1</button>
+        <p x-show="open===1" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti culpa nostrum optio blanditiis impedit repellat ex natus porro! Nam ducimus, quo eos sit nostrum cupiditate voluptate praesentium eum iusto nesciunt!</p>
       </section>
-      <section x-data="{expanded: false}">
-        <button @click="expanded = ! expanded">bouton 2</button>
-        <p x-show="expanded" x-collapse.duration.1000ms>Nihil, et perferendis a commodi adipisci molestias odit expedita assumenda aliquam. Recusandae fugiat aliquam nobis ab, quas incidunt porro unde molestias numquam, consequuntur optio saepe minus delectus explicabo cupiditate architecto!</p>
+      <section>
+        <button @click="open= 2">bouton 2</button>
+        <p x-show="open===2" x-collapse>Beatae laudantium fuga rerum eum enim impedit, dolorum, tempore explicabo soluta quidem nisi suscipit aspernatur voluptatum, et repellat exercitationem error placeat quaerat blanditiis temporibus numquam? Atque provident dolores nam neque?</p>
       </section>
-      <section x-data="{expanded: false}">
-        <button @click="expanded = ! expanded">bouton 3</button>
-        <p x-show="expanded" x-collapse.duration.1000ms>Nihil, necessitatibus minus cum ullam nobis quasi nesciunt officiis quis libero voluptatum odit voluptates sed mollitia ad corrupti dolorum iusto explicabo, itaque fuga. Officiis consectetur amet ipsum aut eos nulla!</p>
+      <section>
+        <button @click="open= 3">bouton 3</button>
+        <p x-show="open===3" x-collapse>Eveniet ipsam, suscipit, quis distinctio odit incidunt nobis veniam ad placeat, totam ut necessitatibus odio amet rerum quidem esse delectus iusto in dolore repudiandae pariatur. Nam molestiae qui eligendi iste.</p>
       </section>
-    </div>
-  </body>
+      </body>
 </html>

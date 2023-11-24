@@ -6,27 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onglets</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      @font-face {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+      
+      body{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      .parent{
+        position: relative;   
+      }
+
+      .parent>div{
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        opacity: 0px;
+        transition: opacity 700ms ease-in-out;
+        z-index: -1;
+      }
+
+      ul{
+        list-style-type: none;
+        margin: none;
+        padding: none;
+      }
+
+      ol{
+        list-style-type: none;
+        margin: none;
+        padding: none;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Onglets</h1>
-    <ul role="tablist">
-      <li role="tab">Onglet 1</li>
-      <li role="tab">Onglet 2</li>
-      <li role="tab">Onglet 3</li>
-      <div>
-        <div role="tabpanel" :class="{actif:ouvert === 1,}" @click="isOpen = 1">
-          <h1>Panneau 1</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit beatae perspiciatis amet qui explicabo labore aut quidem et in recusandae optio molestiae sapiente ratione dolorem veritatis, omnis minus eligendi nemo?</p>
-        </div>
-        <div role="tabpanel" :class="{actif:ouvert === 2,}" @click="isOpen = 2">
-          <h1>Panneau 2</h1>
-          <p>Fuga nobis dignissimos consectetur in ipsum! Cumque, ipsa. Sed voluptate nostrum voluptas, perferendis ipsa tempora asperiores vero neque alias possimus doloribus adipisci doloremque distinctio magnam ullam voluptatibus quaerat non est?</p>
-        </div>
-        <div role="tabpanel" :class="{actif:ouvert === 3,}" @click="isOpen = 3">
-          <h1>Panneau 3</h1>
-          <p>Quia illum officiis nesciunt reprehenderit aspernatur, ab eius minima ipsa consequatur dolorem? Id repellendus culpa quo, esse harum nostrum! Facere quod hic nemo veritatis! Natus, vitae adipisci. Magni, rerum incidunt!</p>
-        </div>
-      </div>
-    </ul>
-  </body>
-</html>
+  

@@ -80,7 +80,22 @@
     <h1> Onglets</h1>
     <h2> Les meilleurs Mclaren de L'Histoire de la marque</h2>
     <div id="onglets" x-data="{IsOpen : 1}">
-    <img src="logomclaren.jpg" width="600px" height="400px">
+      <ul role="tablist">
+        <button><li role="tab" :class="{actif:IsOpen === 1}" @click="IsOpen = 1">MclarenF1</li></button>
+        <button><li role="tab" :class="{actif:IsOpen === 2}" @click="IsOpen = 2">MclarenP1</li></button>
+        <button><li role="tab" :class="{actif:IsOpen === 3}" @click="IsOpen = 3">Mclaren MP4-4</li></button>
+      </ul>
+
+      <section>
+        <div class="parent">
+          <div role="tabpanel" :class="{actif:IsOpen === 1}">
+            <h2> Mclaren F1</h2>
+            <p>La McLaren F1 est une voiture de sport conçue et construite par McLaren Cars, lancée en 1992 et produite jusqu'en 1998. Elle est propulsée par un moteur V12 BMW de 6,1 litres de cylindrée développant 627 chevaux. Elle est conçue par Gordon Murray et Peter Stevens. Elle est la première voiture de route entièrement construite en fibre de carbone. Elle est également la première voiture de route à utiliser un système de freinage en carbone-céramique. Elle est la voiture de route la plus rapide du monde de 1992 à 2005 avec une vitesse de pointe de 386,7 km/h. Elle est également la voiture de route la plus chère du monde de 1992 à 2005 avec un prix de 970 000 $.</p>
+          </div>
+          
+        
+      </section>
+    <img src="mclarenf1.jpg" width="600px" height="400px">
 
   </div>
 

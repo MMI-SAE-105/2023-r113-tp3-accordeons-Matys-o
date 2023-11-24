@@ -19,12 +19,18 @@
         position: relative;   
       }
 
+      .parent>div.actif {
+        opacity: 1;
+        position: relative;
+        z-index: 1;
+      }
+
       .parent>div{
         position: absolute;
         top: 30px;
-        left: 0px;
-        opacity: 0px;
-        transition: opacity 700ms ease-in-out;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1000ms ease-in-out;
         z-index: -1;
       }
 
@@ -89,21 +95,31 @@
       <section>
         <div class="parent">
           <div role="tabpanel" :class="{actif:IsOpen === 1}">
+
             <h2> Mclaren F1</h2>
             <img src="mclarenf1.jpg" width="600px" height="400px">
-            <p>La McLaren F1 est une voiture de sport conçue et construite par McLaren Cars, lancée en 1992 et produite jusqu'en 1998. Elle est propulsée par un moteur V12 BMW de 6,1 litres de cylindrée développant 627 chevaux. Elle est conçue par Gordon Murray et Peter Stevens. Elle est la première voiture de route entièrement construite en fibre de carbone. Elle est également la première voiture de route à utiliser un système de freinage en carbone-céramique. Elle est la voiture de route la plus rapide du monde de 1992 à 2005 avec une vitesse de pointe de 386,7 km/h. Elle est également la voiture de route la plus chère du monde de 1992 à 2005 avec un prix de 970 000 $.</p>
+
+            <ol>La McLaren F1 est une voiture de sport conçue et construite par McLaren Cars, lancée en 1992 et produite jusqu'en 1998. Elle est propulsée par un moteur V12 BMW de 6,1 litres de cylindrée développant 627 chevaux. Elle est conçue par Gordon Murray et Peter Stevens. Elle est la première voiture de route entièrement construite en fibre de carbone. Elle est également la première voiture de route à utiliser un système de freinage en carbone-céramique. Elle est la voiture de route la plus rapide du monde de 1992 à 2005 avec une vitesse de pointe de 386,7 km/h. Elle est également la voiture de route la plus chère du monde de 1992 à 2005 avec un prix de 970 000 $. </ol>
           </div>
 
           <div role="tabpanel" :class="{actif:IsOpen === 2}">
+
             <h2> Mclaren P1</h2>
-            <img src="mclarenp1.jpg" width="600px" height="400px">
-            <p>La McLaren P1 est une voiture de sport du constructeur automobile britannique McLaren Automotive. Elle est présentée au Mondial de l'automobile de Paris 2012. Elle est produite de 2013 à 2015 à 375 exemplaires. Elle est la première voiture de route hybride du constructeur. Elle est propulsée par un moteur V8 biturbo de 3,8 litres de cylindrée développant 737 chevaux et un moteur électrique développant 179 chevaux. Elle est conçue par Frank Stephenson. Elle est la voiture de route la plus rapide du monde de 2013 à 2015 avec une vitesse de pointe de 350 km/h. Elle est également la voiture de route la plus chère du monde de 2013 à 2015 avec un prix de 1 150 000 $.</p>
+            <img src="mclaren p1.jpg" width="600px" height="400px">
+
+            <ol> McLaren P1 est une voiture de sport du constructeur automobile britannique McLaren Automotive. Elle est présentée au Mondial de l'automobile de Paris 2012. Elle est produite de 2013 à 2015 à 375 exemplaires. Elle est la première voiture de route hybride du constructeur. Elle est propulsée par un moteur V8 biturbo de 3,8 litres de cylindrée développant 737 chevaux et un moteur électrique développant 179 chevaux. Elle est conçue par Frank Stephenson. Elle est la voiture de route la plus rapide du monde de 2013 à 2015 avec une vitesse de pointe de 350 km/h. Elle est également la voiture de route la plus chère du monde de 2013 à 2015 avec un prix de 1 150 000 $. </ol>
           </div>
         
+          <div role="tabpanel" :class="{actif:IsOpen === 3}">
+
+            <h2> Mclaren MP4-4</h2>
+            <img src="mclaren mp4-4.jpg" width="600px" height="400px">
+
+            <ol>La McLaren MP4/4 est une monoplace de Formule 1 conçue par l'ingénieur britannique Steve Nichols avec l'aide de l'ingénieur américain Gordon Murray pour l'écurie McLaren Racing, engagée en championnat du monde de Formule 1 1988. Elle est pilotée par le Brésilien Ayrton Senna et le Français Alain Prost. Elle est propulsée par un moteur V6 Honda de 1,5 litre de cylindrée développant 650 chevaux. Elle est conçue par Steve Nichols et Gordon Murray. Elle est la voiture de Formule 1 la plus victorieuse de l'histoire avec 15 victoires en 16 courses. Elle est également la voiture de Formule 1 la plus rapide de l'histoire avec une vitesse de pointe de 350 km/h. </ol>
+          </div>
+        </div>
       </section>
 
-  </div>
-
-
+    </div>
   </body>
-  
+</html>  

@@ -13,7 +13,7 @@
         padding: 0; /* pour éviter les "padding" par défaut */
     }
       #accordeon li {
-        width: 107; /* largeur de chaque élément replié 107px */
+        width: 107px; /* largeur de chaque élément replié 107px */
         overflow: hidden; /* pour cacher le contenu dépassant de l'élément */
         transition: width 0.5s ease-in-out; /* pour l'animation, transition sur width */
         background-color: lightgray; /* couleur de fond #eee */
@@ -34,7 +34,6 @@
     width: 200px;/* largeur du texte de 200px */
     padding: 10px; /* pour espacer le texte, padding de 10px */
     display: flex;/* pour que les éléments soient alignés verticalement */
-    
     flex-direction: column; /* espace entre les éléments */
 }
 /* Sur tous les enfants de figcation */
@@ -48,10 +47,10 @@
   <body>
     <h1>Accordéon horizontal</h1>
 
-    <ul id="accordeon" x-data="(isOpen:0)">
+    <ul id="accordeon" x-data="{isOpen:0}">
 
       <li :class="{actif:isOpen === 0,}" @click="isOpen = 0">
-        <figure @click ="open= 0"> 
+        <figure > 
           <img src="https://picsum.photos/100?random=1" alt="" width="102">
           <figcaption>
             <h3>Lorem, ipsum dolor.</h3>
@@ -60,7 +59,7 @@
         </figure>
       </li>
       <li :class="{actif:isOpen === 1,} " @click="isOpen = 1">
-        <figure @click ="open= 1">
+        <figure >
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
             <h3>Possimus, doloremque modi?</h3>
@@ -69,7 +68,7 @@
         </figure>
       </li>
       <li :class="{actif:isOpen === 2,}" @click="isOpen = 2"> 
-        <figure @click ="open= 2">
+        <figure >
           <img src="https://picsum.photos/100?random=3" alt="" width="102">
           <figcaption>
             <h3>Praesentium, iusto excepturi.</h3>
